@@ -1,0 +1,174 @@
+.bg-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(-1.6);
+  position: absolute;
+}
+
+.logo {
+  transform: translateY(-2px);
+  width: 100px;
+  height: 100px;
+}
+
+.nav-link {
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid rgb(0, 107, 128);
+}
+
+.icon {
+  width: 80px;
+}
+
+.text-animated {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: rgb(5, 96, 116);
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+
+.view-btn {
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 42px;
+  text-decoration: none;
+  border: none;
+  background-color: rgb(5, 96, 116);
+}
+
+
+.intro-head {
+  padding-top: 20px;
+  padding-left: 50px;
+  text-transform: uppercase;
+}
+
+.intro-head:after {
+  width: 30%;
+  height: 1.1px;
+  background-color: white;
+  right: 0;
+  top: -1px;
+  border-top: 2px solid rgb(5, 96, 116);
+}
+
+
+/* form */
+
+.open-button {
+  color: rgb(9, 169, 25);
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+
+}
+
+.pop-top {
+  background-color: rgba(22, 190, 69, 255);
+
+}
+
+.b-logo {
+  border-radius: 50%;
+  padding-right: 10px;
+  width: 50px;
+}
+
+.pop-head {
+  font-weight: bolder;
+  color: white;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.pop-subs {
+  color: white;
+  padding-left: 20px;
+  font-size: 13px;
+
+}
+
+.box {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.37);
+  -webkit-box-shadow: -2px 2px 13px -3px rgba(0,0,0,0.37);
+  -moz-box-shadow: -2px 2px 13px -3px rgba(0,0,0,0.37);
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+}
+
+.text1 {
+  font-weight: bold;
+  color: rgb(101, 100, 100);
+  font-size: 13px;
+}
+
+.text1 {
+  font-size: 1p5x;
+}
+
+.contact-btn {
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  padding: 6px 42px;
+  text-decoration: none;
+  border: none;
+  background-color:rgb(9, 169, 25);
+}
+
+/* The popup form - */
+.form-popup {
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+  border: 1px solid #ccc8c8;
+  z-index: 9;
+}
+
+/*  styles to the form container */
+.form-container {
+  max-width: 340px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container .btn {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  color: white;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
